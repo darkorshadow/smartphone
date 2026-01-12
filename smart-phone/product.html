@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل المنتج - متجر سمارت فون</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-item">
+                <i class="fas fa-phone"></i>
+                <span>+967 777 130 352</span>
+            </div>
+            <div class="top-bar-item">
+                <i class="fas fa-envelope"></i>
+                <span>info@smartphonestore.com</span>
+            </div>
+            <div class="top-bar-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>مأرب - شارع </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Normalize Navbar for consistency -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- Menu Button First (Right in RTL) -->
+            <div class="mobile-menu-btn" id="sidebarToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <!-- Logo -->
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-mobile-alt"></i>
+                <span>متجر سمارت فون</span>
+            </a>
+
+            <!-- Links (Hidden on Mobile, now in Sidebar) -->
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                    <li class="dropdown">
+                        <a href="#"><i class="fas fa-th-large"></i> الأقسام <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="category.html?cat=smartphones">الهواتف الذكية</a>
+                            <a href="category.html?cat=watches">الساعات الذكية</a>
+                            <a href="category.html?cat=accessories">ملحقات الهواتف</a>
+                            <a href="category.html?cat=speakers">مكبرات الصوت</a>
+                            <a href="category.html?cat=electronics">الإلكترونيات</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Search -->
+            <div class="nav-search">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="ابحث عن منتج...">
+                    <button type="button" id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar (Same as index) -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h3>القائمة</h3>
+            <button id="closeSidebar"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="sidebar-content">
+            <div class="sidebar-nav mobile-only">
+                <h4><i class="fas fa-bars"></i> القائمة الرئيسية</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                    <li><a href="category.html?cat=smartphones"><i class="fas fa-mobile-alt"></i> الهواتف الذكية</a>
+                    </li>
+                    <li><a href="category.html?cat=watches"><i class="fas fa-clock"></i> الساعات الذكية</a></li>
+                    <li><a href="category.html?cat=accessories"><i class="fas fa-headphones"></i> ملحقات الهواتف</a>
+                    </li>
+                    <li><a href="category.html?cat=speakers"><i class="fas fa-volume-up"></i> مكبرات الصوت</a></li>
+                    <li><a href="category.html?cat=electronics"><i class="fas fa-tv"></i> الإلكترونيات</a></li>
+                </ul>
+                <hr style="margin: 20px 0; border: 0; border-top: 1px solid var(--gray-light);">
+            </div>
+
+            <div class="sidebar-section">
+                <h4><i class="fas fa-info-circle"></i> نبذة عنا</h4>
+                <p>نحن <strong>متجر سمارت فون</strong>، وجهتك الأولى للحصول على أحدث المنتجات التقنية بأفضل الأسعار.</p>
+            </div>
+
+            <div class="sidebar-section">
+                <h4><i class="fas fa-address-book"></i> اتصل بنا</h4>
+                <ul class="contact-list">
+                    <li><i class="fas fa-map-marker-alt"></i> مأرب - شارع حدة - جوال مركز الكميم</li>
+                    <li><i class="fas fa-phone"></i> 777130352</li>
+                    <li><i class="fas fa-envelope"></i> info@smartphonestore.com</li>
+                    <li><i class="fas fa-clock"></i> 8:00 ص - 11:00 م</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail">
+        <div class="container">
+            <button onclick="history.back()" class="btn-back"><i class="fas fa-arrow-right"></i> عودة</button>
+            <div class="product-detail-container">
+                <!-- Content injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>عن المتجر</h3>
+                    <p>متجر سمارت فون يقدم لكم أفضل المنتجات الرقمية الحديثة مع ضمان الجودة وخدمة التوصيل المتميزة.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-chevron-left"></i> الرئيسية</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>تواصل معنا</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 جميع الحقوق محفوظة لمتجر سمارت فون</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed Contact Links -->
+    <div class="fixed-contact-links">
+        <a href="https://wa.me/+967777130352" class="fixed-link whatsapp-link" target="_blank" title="واتساب">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+967777130352" class="fixed-link phone-link" title="اتصل بنا">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/products.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

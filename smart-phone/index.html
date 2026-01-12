@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر المنتجات التقنية - Yemen Smart Phone Store</title>
+    <meta name="description"
+        content="متجر إلكتروني متخصص في الهواتف الذكية، الساعات، الملحقات والإلكترونيات بأفضل الأسعار">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- شريط المعلومات الثلاثي -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-item">
+                <i class="fas fa-info-circle"></i>
+                <span>متجر متخصص في أحدث المنتجات التقنية</span>
+            </div>
+            <div class="top-bar-item">
+                <i class="fas fa-phone-alt"></i>
+                <span>للتواصل: 7777130352+</span>
+            </div>
+            <div class="top-bar-item">
+                <i class="fas fa-shipping-fast"></i>
+                <span>شحن سريع لجميع أنحاء اليمن</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="mobile-menu-btn" id="sidebarToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="nav-logo">
+                <a href="index.html">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>متجر سمارت فون</span>
+                </a>
+            </div>
+
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> الرئيسية</a></li>
+                    <li class="dropdown">
+                        <a href="#"><i class="fas fa-th-large"></i> الأقسام <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="category.html?cat=smartphones">الهواتف الذكية</a>
+                            <a href="category.html?cat=watches">الساعات الذكية</a>
+                            <a href="category.html?cat=accessories">ملحقات الهواتف</a>
+                            <a href="category.html?cat=speakers">مكبرات الصوت</a>
+                            <a href="category.html?cat=electronics">الإلكترونيات</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-search">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="ابحث عن منتج...">
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h3>القائمة</h3>
+            <button id="closeSidebar"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="sidebar-content">
+            <!-- Mobile Navigation (Visible only on mobile) -->
+            <div class="sidebar-nav mobile-only">
+                <h4><i class="fas fa-bars"></i> القائمة الرئيسية</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                    <li><a href="category.html?cat=smartphones"><i class="fas fa-mobile-alt"></i> الهواتف الذكية</a>
+                    </li>
+                    <li><a href="category.html?cat=watches"><i class="fas fa-clock"></i> الساعات الذكية</a></li>
+                    <li><a href="category.html?cat=accessories"><i class="fas fa-headphones"></i> ملحقات الهواتف</a>
+                    </li>
+                    <li><a href="category.html?cat=speakers"><i class="fas fa-volume-up"></i> مكبرات الصوت</a></li>
+                    <li><a href="category.html?cat=electronics"><i class="fas fa-tv"></i> الإلكترونيات</a></li>
+                </ul>
+                <hr style="margin: 20px 0; border: 0; border-top: 1px solid var(--gray-light);">
+            </div>
+
+            <div class="sidebar-section">
+                <h4><i class="fas fa-info-circle"></i> نبذة عنا</h4>
+                <p>نحن <strong>متجر سمارت فون</strong>، وجهتك الأولى للحصول على أحدث المنتجات التقنية بأفضل الأسعار
+                    في اليمن. نتميز بتوفير منتجات أصلية وموثوقة مع ضمان الجودة والكفالة.</p>
+                <div class="about-features-mini">
+                    <p><i class="fas fa-check-circle"></i> منتجات أصلية</p>
+                    <p><i class="fas fa-shipping-fast"></i> شحن سريع</p>
+                </div>
+            </div>
+            <div class="sidebar-section">
+                <h4><i class="fas fa-address-book"></i> تواصل معنا</h4>
+                <ul class="contact-list">
+                    <li><i class="fas fa-map-marker-alt"></i> مأرب، اليمن</li>
+                    <li><i class="fas fa-phone-alt"></i> +967 777 130 352</li>
+                    <li><i class="fas fa-envelope"></i> yemensmartfhonestore@gmail.com</li>
+                    <li><i class="fas fa-clock"></i> 9 صباحاً - 10 مساءً</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h4><i class="fas fa-paper-plane"></i> أرسل رسالة</h4>
+                <form id="sidebarContactForm">
+                    <div class="form-group-sm">
+                        <input type="text" id="sbName" placeholder="الاسم" required>
+                    </div>
+                    <div class="form-group-sm">
+                        <input type="tel" id="sbPhone" placeholder="الهاتف">
+                    </div>
+                    <div class="form-group-sm">
+                        <textarea id="sbMessage" placeholder="الرسالة" rows="2" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-sm btn-primary">إرسال</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- قسم البحث الرئيسي -->
+    <section class="main-search-section">
+        <div class="container">
+            <div class="main-search-content">
+                <h1>أفضل العروض على الهواتف الذكية والمنتجات التقنية</h1>
+                <p>اكتشف أحدث المنتجات التقنية بأفضل الأسعار في اليمن</p>
+
+                <div class="main-search-box">
+                    <div class="search-wrapper">
+                        <input type="text" id="mainSearchInput"
+                            placeholder="ماذا تبحث عن؟ اكتب اسم المنتج أو الماركة...">
+                        <button id="mainSearchBtn" class="btn btn-primary">
+                            <i class="fas fa-search"></i> بحث
+                        </button>
+                    </div>
+                    <div class="search-tags">
+                        <span>الاكثر بحثاً:</span>
+                        <a href="#" class="search-tag" data-term="آيفون">آيفون</a>
+                        <a href="#" class="search-tag" data-term="سامسونج">سامسونج</a>
+                        <a href="#" class="search-tag" data-term="هواوي">هواوي</a>
+                        <a href="#" class="search-tag" data-term="سماعات">سماعات</a>
+                        <a href="#" class="search-tag" data-term="شواحن">شواحن</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- القسم الرئيسي -->
+    <main class="main-content">
+        <div class="container">
+            <!-- الأقسام الرئيسية -->
+            <section class="categories-section" id="categories">
+                <h2 class="section-title"><i class="fas fa-th-large"></i> الأقسام الرئيسية</h2>
+                <div class="categories-grid">
+                    <div class="category-card" data-category="smartphones">
+                        <div class="category-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>الهواتف الذكية</h3>
+                        <p>أحدث الهواتف الذكية من أشهر العلامات التجارية</p>
+                        <a href="category.html?cat=smartphones" class="category-link">تصفح المنتجات</a>
+                    </div>
+
+                    <div class="category-card" data-category="watches">
+                        <div class="category-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>الساعات الذكية</h3>
+                        <p>أجهزة تتبع اللياقة والأجهزة القابلة للارتداء</p>
+                        <a href="category.html?cat=watches" class="category-link">تصفح المنتجات</a>
+                    </div>
+
+                    <div class="category-card" data-category="accessories">
+                        <div class="category-icon">
+                            <i class="fas fa-headphones"></i>
+                        </div>
+                        <h3>ملحقات الهواتف</h3>
+                        <p>شواحن، سماعات، أغلفة وملحقات متنوعة</p>
+                        <a href="category.html?cat=accessories" class="category-link">تصفح المنتجات</a>
+                    </div>
+
+                    <div class="category-card" data-category="speakers">
+                        <div class="category-icon">
+                            <i class="fas fa-volume-up"></i>
+                        </div>
+                        <h3>مكبرات الصوت</h3>
+                        <p>سماعات ومكبرات صوت بجودة عالية</p>
+                        <a href="category.html?cat=speakers" class="category-link">تصفح المنتجات</a>
+                    </div>
+
+                    <div class="category-card" data-category="electronics">
+                        <div class="category-icon">
+                            <i class="fas fa-tv"></i>
+                        </div>
+                        <h3>الإلكترونيات</h3>
+                        <p>مجموعة متنوعة من الأجهزة الإلكترونية</p>
+                        <a href="category.html?cat=electronics" class="category-link">تصفح المنتجات</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- المنتجات المميزة -->
+            <section class="featured-section" id="featured">
+                <h2 class="section-title"><i class="fas fa-star"></i> منتجات مميزة</h2>
+                <div class="products-grid" id="featuredProducts">
+                    <!-- سيتم تعبئتها بواسطة JavaScript -->
+                </div>
+            </section>
+
+
+        </div>
+    </main>
+
+    <!-- التذييل -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-mobile-alt"></i> متجر سمارت فون</h3>
+                    <p>متجر متخصص في بيع المنتجات التقنية والإلكترونية بجودة عالية وأسعار منافسة في اليمن.</p>
+                    <div class="social-links">
+                        <a href="https://wa.me/+967777130352" class="social-link whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://t.me/+967777130352" class="social-link telegram" target="_blank">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="mailto:yemensmartfhonestore@gmail.com" class="social-link email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="#" class="social-link facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-chevron-left"></i> الرئيسية</a></li>
+                        <li><a href="#categories"><i class="fas fa-chevron-left"></i> الأقسام</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-left"></i> نبذة عنا</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-left"></i> اتصل بنا</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>خدماتنا</h3>
+                    <ul>
+                        <li><i class="fas fa-shipping-fast"></i> الشحن السريع</li>
+                        <li><i class="fas fa-shield-alt"></i> ضمان المنتجات</li>
+                        <li><i class="fas fa-headset"></i> الدعم الفني</li>
+                        <li><i class="fas fa-exchange-alt"></i> الإرجاع والاستبدال</li>
+                        <li><i class="fas fa-credit-card"></i> دفع آمن</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>طرق الدفع</h3>
+                    <div class="payment-methods">
+                        <span title="الكريمي"><i class="fas fa-money-bill-wave"></i> الكريمي</span>
+                        <span title="محفظة جيب"><i class="fas fa-wallet"></i> محفظة جيب</span>
+                        <span title="تحويل بنكي"><i class="fas fa-university"></i> تحويل بنكي</span>
+                    </div>
+                    <p>نقبل جميع طرق الدفع الآمنة</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>جميع الحقوق محفوظة &copy; 2023 متجر سمارت فون | Yemen Smart Phone Store</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- روابط التواصل الثابتة -->
+    <div class="fixed-contact-links">
+        <a href="https://wa.me/+967777130352" class="fixed-link whatsapp-link" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span class="link-text">واتساب</span>
+        </a>
+        <a href="https://t.me/+967777130352" class="fixed-link telegram-link" target="_blank">
+            <i class="fab fa-telegram"></i>
+            <span class="link-text">تلغرام</span>
+        </a>
+        <a href="mailto:yemensmartfhonestore@gmail.com" class="fixed-link email-link">
+            <i class="fas fa-envelope"></i>
+            <span class="link-text">البريد</span>
+        </a>
+        <a href="tel:+967777130352" class="fixed-link phone-link">
+            <i class="fas fa-phone-alt"></i>
+            <span class="link-text">اتصال</span>
+        </a>
+    </div>
+
+
+
+    <!-- زر العودة للأعلى -->
+    <button class="scroll-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- إشعارات -->
+    <div id="notification" class="notification"></div>
+
+    <script src="js/products.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
