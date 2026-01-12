@@ -75,7 +75,7 @@ const allProducts = [
         id: 'samsung-s22-ultra',
         name: 'سامسونج S22 الترا',
         description: 'هاتف سامسونج الأحدث بكاميرة 200 ميجابكسل وأداء استثنائي',
-        price: 3899,
+        price: 1640,
         image: 'images/products/samsung-s22-ultra.jpg',
         images: ['images/products/samsung-s22-ultra.jpg', 'images/products/samsung-s22-ultra-2.jpg'],
         brand: 'Samsung',
